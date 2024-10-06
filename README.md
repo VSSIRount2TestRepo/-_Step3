@@ -1,5 +1,24 @@
 
-# MQTT 구현 / Modbus 설명
+
+# MQTT 구현
+
+1. mosquitto라는 broker프로그램을 받는다 (다운로드 - https://mosquitto.org/download/)
+2. `C:\Program Files\mosquitto`으로 환경변수 경로 설정 뒤, cmd창에서 `mosquitto -v`로 브로커 실행.
+
+![broker.PNG](img%2Fbroker.PNG)
+
+3. Unreal Engine 5에서 MQTT 플러그인을 활용해 blueprint툴을 사용할 수 있게 한다.
+
+4. 제공되는 blueprint functions을 활용해 client와 subscriber를 작성한다
+![mqttlogic.PNG](img%2Fmqttlogic.PNG)
+
+
+5. 브로커와 서로 상호 작동하는지 본다.
+![broker connection.PNG](img%2Fbroker%20connection.PNG)
+클라이언트가 브로커에 접속했고, 메시지를 교환한 이력이 뜬다.
+
+
+# MQTT 설명 / Modbus 설명
 
 ---
 
